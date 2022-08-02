@@ -1,0 +1,29 @@
+header{
+    text-align: center;
+    font-size: 1em;
+    color: rgb(22, 54, 128);
+    margin-bottom: .3em;
+  }
+
+  li{
+    padding-left: .3em;
+    padding-right: .3em;
+    border: 1px solid rgb(248, 245, 245);
+    background-color: rgb(182, 199, 231);
+  }
+
+  table, th, td {
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px solid;
+    width: 60%;
+    text-align: center;
+  }
+
+  footer{
+    text-align: center;
+  }
+
+  form{
+    text-align: center;
+  }

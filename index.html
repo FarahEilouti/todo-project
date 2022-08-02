@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo-project</title>
+    <link rel="stylesheet" href="./styling.css">
+</head>
+<body>
+    <header>
+        <h1>Todo information center</h1>
+        <img src="https://cdn4.iconfinder.com/data/icons/rounded-black-basic-ui/139/Profile01-RoundedBlack-512.png" width="200" alt="">
+        <nav>
+            <ul>
+                <h2>Please fill your information below:</h2>
+                <li><a href="./index.html">Index</a></li>
+                <li><a href="./about.html">About</a></li>
+            </ul>
+        </nav>
+
+        
+    </header>
+
+
+
+    <main>
+        <table>
+            <tr>
+              <th>Task</th>
+              <th>Status</th>
+              
+            </tr>
+            <tr>
+              <td>Respond to inbox emails</td>
+              <td>7 done, 3 to go</td>
+              
+            </tr>
+            <tr>
+              <td>Joining zoom meetings</td>
+              <td>next meeting in 30 minutes</td>
+              
+            </tr>
+            <tr>
+                <td>Files management in PC</td>
+                <td>Pending</td>
+            
+              </tr>
+          </table>
+
+          <form>
+            <p>
+                Start here: 
+            </p>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname">
+            <p>select gender:</p>
+            <input type="radio" name="gender" value="male">Male<br>
+            <input type="radio" name="gender" value="female">Female<br>
+            <p></p>
+            <label for="age">Age:</label><br>   
+            <input type="number" name="age" id="age" /> 
+            <p></p>  
+            <p>Do you want to skip the welcoming message?</p> 
+            <input type="radio" name="yesno" value="yes"> Yes<br>
+            <input type="radio" name="yesno" value="no"> No <br>
+            <p></p>
+            <input type="submit" value="Submit">
+          </form>
+        
+    </main>
+
+    <footer>
+        <p>
+            &copy; Todo, Inc. All rights reserved. 
+        
+        </p>
+        <h4>
+            contact us on Facebook using this <a href="https://www.facebook.com/farah.eilouti/">link</a>
+        </h4>
+    </footer>
+</body>
+</html>
