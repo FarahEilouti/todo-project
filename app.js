@@ -1,15 +1,30 @@
+
+var answersArray = [];
+
+
+
+function greet(){
+
 var userName = prompt("Enter your name please")
+answersArray.push(userName);
 
 var gender = prompt('Select gender')
+answersArray.push(gender);
+
 if (gender == 'male') {
     alert ("Welcome Mr. "+ userName)
-
 } else if (gender == 'female') {
-  alert("Welcome Mrs. " + userName)}
-
-  else{
+    alert("Welcome Mrs. " + userName)}
+else{
     alert("Welcome " + userName)
 }
+
+}
+
+
+
+function userAge(){
+
 var userAge = prompt("Enter your age please:")
 
 while (userAge <= 0){
@@ -17,12 +32,15 @@ while (userAge <= 0){
     userAge = prompt("Enter your age please:")
 
 }
+answersArray.push(userAge);
+} 
+
+function userExperience(){
+
 var AcceptMessage = confirm("Do you want to skip the welcoming message?")
 if (AcceptMessage == false){
     alert("Welcome to our website, feel free to explore! ")
 }
-
-var answersArray = [];
 
 var enjoy = prompt("are you enjoying browsing this website?")
 if(enjoy === 'yes' || enjoy == 'no'){
@@ -52,8 +70,17 @@ if(suggest === 'yes'){
 }else{
     alert("Invalid answer")
     answersArray.push("invalid")
+}
 
 }
+
+
+
+greet();
+userAge();
+userExperience();
+
 console.log(answersArray);
+
 
 
