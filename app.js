@@ -2,14 +2,19 @@
 var answersArray = [];
 
 
-
 function greet(){
 
 var userName = prompt("Enter your name please")
 answersArray.push(userName);
 
+return userName;
+}
+
+// --------------------------
+function genderSelect(userName) {
+
 var gender = prompt('Select gender')
-answersArray.push(gender);
+answersArray.push(gender); 
 
 if (gender == 'male') {
     alert ("Welcome Mr. "+ userName)
@@ -21,7 +26,7 @@ else{
 
 }
 
-
+// --------------------------------------
 
 function userAge(){
 
@@ -34,13 +39,17 @@ while (userAge <= 0){
 }
 answersArray.push(userAge);
 } 
+// -------------------------------------
 
-function userExperience(){
+function userExperience1(){
 
 var AcceptMessage = confirm("Do you want to skip the welcoming message?")
 if (AcceptMessage == false){
     alert("Welcome to our website, feel free to explore! ")
 }
+}
+// ------------------------------------------
+function userExperience2(){
 
 var enjoy = prompt("are you enjoying browsing this website?")
 if(enjoy === 'yes' || enjoy == 'no'){
@@ -50,6 +59,10 @@ if(enjoy === 'yes' || enjoy == 'no'){
     alert("Invalid answer")
     answersArray.push("invalid")
 }
+}
+// -------------------------------------------
+
+function userExperience3(){
 
 var share = prompt("Will you share our website link?")
 if(share === 'yes' || share == 'no'){
@@ -59,6 +72,9 @@ if(share === 'yes' || share == 'no'){
     alert("Invalid answer")
     answersArray.push("invalid")
 }
+}
+ // --------------------------------------------
+function userExperience4(){
 
 var suggest = prompt("Do you have suggestions to enhance our website?")
 if(suggest === 'yes'){
@@ -76,11 +92,11 @@ if(suggest === 'yes'){
 
 
 
-greet();
+var employeeName = greet();
+genderSelect(employeeName);
 userAge();
-userExperience();
-
+userExperience1();
+userExperience2();
+userExperience3();
+userExperience4();
 console.log(answersArray);
-
-
-
